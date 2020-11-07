@@ -1,7 +1,7 @@
-#チーズアカデミーのwebサイト
+# チーズアカデミーのwebサイト
 
-##webの紹介
+## webの紹介
 
-##HTML.CSS
+## HTML.CSS
 
 deploy先：https://hoshimotoyasunori.github.io/cheese-academy/
