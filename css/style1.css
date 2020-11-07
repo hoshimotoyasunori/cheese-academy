@@ -1,0 +1,447 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+a{
+  text-decoration: none;
+}
+.Item{
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5bc8ac;
+  color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.back{
+    width: 100%;
+    background-color: white;
+}
+.go-top{
+    float: right;
+    margin-right: 50px;
+    width:60px; 
+    height: 60px; 
+    background-color: #707070;
+}
+
+.go-top a{
+    fill:#707070;
+    line-height: 60px;
+    display: inline-block;
+    width: 100%;
+}
+
+.go-top svg{
+    padding: 18px 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: silver;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+.title_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/mainbg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    height: 300px;
+}
+.title{
+    font-size: 48px;
+    padding-bottom: 40px;
+}
+.subtitle{
+    font-size: 36px;
+}
+
+.main{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #efefef;
+    background-color: white;
+}
+.main_file{
+    width: 30%;
+}
+.main_list{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+ul {
+  list-style: none;
+}
+li{
+    padding-left: 40px;
+}
+
+.loop_css {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  left: auto;
+  overflow: hidden;
+}
+
+.loop_css img {
+  width: auto;
+  height: 100%;
+}
+
+/* 1つ目の画像 */
+.loop_css img:first-child {
+  -webkit-animation: loop 50s -25s linear infinite;
+  animation: loop 50s -25s linear infinite;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+/* 2つ目の画像 */
+.loop_css img + img {
+  -webkit-animation: loop2 50s  linear infinite;
+  animation: loop2 50s linear infinite;
+}
+
+.about_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-top: 120px;
+    width: 100%;
+    background-color: white;
+}
+.about_box_title{
+    font-size: 24px;
+    color: #ffd61a;
+    padding-bottom: 24px;
+}
+.about_box_subtitle{
+    padding-bottom: 64px;
+}
+.about_box_text1{
+    padding-bottom: 40px;
+}
+.about_box_text3{
+    padding-bottom: 40px;
+}
+.about_box_text4{
+    padding-bottom: 40px;
+}
+
+.slide_img{
+    width: 960px;
+}
+.slide_img_file{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course_box_back{
+    background-color: whitesmoke;
+}
+.course_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    width: 100%;
+    background-color: white;
+}
+.course_box_title{
+    font-size: 24px;
+    color: #222222;
+}
+.course_box_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course_box_img{
+    width: 50%;
+    height: 331.75px;
+}
+.course_box_file{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.course_box_box_text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.course_box_box_text_title{
+    font-size: 24px;
+    color: #222222;
+    padding-bottom: 40px;
+}
+.course_box_box_text_text{
+    padding-left: 48PX;
+    padding-right: 48PX;
+}
+
+
+.news_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 48px;
+    padding-top: 64px;
+    background-color: white;
+}
+.news_box_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.news_box_box_title{
+    font-size: 24px;
+    color: #ffd61a;
+}
+.news_box_box_subtitle{
+    padding-bottom: 64px;
+}
+.news_box_box_news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.news_box_box_news1{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.news_img{
+    width: 100%;
+}
+.news_day{
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+.morebox{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.more_box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 60px;
+    background-color: #ffd61a;
+    margin-bottom: 48px;
+    margin-top: 56px;
+}
+.more_box_tap{
+    font-size: 21px;
+    color: white;
+}
+
+.access_box{
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.access_box_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.access_box_title{
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+.access_box_subtitle{
+    padding-bottom: 64px;
+}
+.contactbox{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact_box{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contact_box_title{
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+.contact_box_subtitle{
+    padding-bottom: 64px;
+}
+.contact_box_text2{
+    padding-bottom: 32px;
+}
+.contact_box_text4{
+    padding-bottom: 80px;
+}
+
+.table_box{
+    margin-top: 64px;
+    margin-bottom: 80px;
+    width: 70%;
+}
+.table_box_td {
+  padding:12px 24px
+}
+
+.form_box{
+    font-size: 14px;
+    width:100%;
+}
+.form_checkbox_box{
+    display: flex;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-right: 40px;
+    padding-left: 20px;
+    transform: scale(2);  
+    
+}
+
+.form_box_td{
+    padding-top : 20px ;
+    padding-bottom : 20px ;
+    padding-left: 120px;
+    width: 328px;
+    height: 36px;
+}
+.tablebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        
+}
+.text{
+    width: 100%;
+    border: 1px solid #bfbfbf;
+}
+.form_box_td_l{
+    text-align: left;
+}
+.boxtext{
+    padding-left: 40px;
+}
+.detailbox{
+    width: 328px;
+    height: 108px;
+    border:1px solid #bfbfbf;
+}
+.submit_box{
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    padding-top: 40px;
+}
+.submit_text{
+    width: 298px;
+    height: 54px;
+    background-color:#ffd61a;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: #ffd61a;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #707070;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.footer_box{
+    font-size: 18px;
+    color: white;
+}
+
+
+
